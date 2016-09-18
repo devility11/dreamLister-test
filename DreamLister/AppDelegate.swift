@@ -91,3 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+//appdelegate - ha az appdelegate-et akarjuk eleerni akkor ezen keresztül menni fog. pl: ad.saveContext
+let ad = UIApplication.shared.delegate as! AppDelegate
+// egy kulon valtozo amellyel elerjuk a contextet 
+let context = ad.persistentContainer.viewContext
